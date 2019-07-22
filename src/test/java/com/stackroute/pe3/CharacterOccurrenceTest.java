@@ -29,8 +29,8 @@ public class CharacterOccurrenceTest {
     @Test
     public void givenInputShouldReturnCountOfCharacter(){
         String str="java java java java";
-        int expectedResult=6;
-        int actualResult=characterOccurrence.getCharacter(str,'a');
+        int expectedResult=8;
+        int actualResult=characterOccurrence.getCharacter(str,"a");
         assertEquals(expectedResult,actualResult);
 
     }
@@ -38,14 +38,14 @@ public class CharacterOccurrenceTest {
     public void givenInputShouldReturnCountOfCharacter2(){
         String str="stackroute stackroute";
         int expectedResult=0;
-        int actualResult=characterOccurrence.getCharacter(str,'z');
+        int actualResult=characterOccurrence.getCharacter(str,"z");
         assertEquals(expectedResult,actualResult);
     }
     @Test
     public void givenInputShouldReturnNull(){
         String str=null;
         int expectedResult=0;
-        int actualResult=characterOccurrence.getCharacter(str,'a');
+        int actualResult=characterOccurrence.getCharacter(str,"a");
         assertEquals(expectedResult,actualResult);
     }
 

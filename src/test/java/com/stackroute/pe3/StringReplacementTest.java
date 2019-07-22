@@ -29,28 +29,23 @@ public class StringReplacementTest {
 
     @Test
     public void givenStringInputShouldReturnReplacedString(){
-        String expectedOutput="faity fry";
-        String actualOutput=stringReplacement.getCharacterReplacer("daily dry",'d','l');
+        String expectedOutput="laily lry";
+        String actualOutput=stringReplacement.getCharacterReplacer("daily dry","d","l");
         assertEquals(expectedOutput,actualOutput);
     }
     @Test
     public void givenInputShouldNull(){
         String expectedOutput="string input is null";
-        String actualOutput=stringReplacement.getCharacterReplacer(null);
+        String actualOutput=stringReplacement.getCharacterReplacer(null,"a","c");
         assertEquals(expectedOutput,actualOutput);
     }
     @Test
     public void givenInputShouldSameOutputIfCharacterNotMatched(){
         String expectedOutput="daily dry";
-        String actualOutput=stringReplacement.getCharacterReplacer("daily dry",'b','c');
+        String actualOutput=stringReplacement.getCharacterReplacer("daily dry","b","c");
         assertEquals(expectedOutput,actualOutput);
     }
-    @Test
-    public void givenIntegerStringInputShouldReturnReplacedString(){
-        String expectedOutput="4632 6689";
-        String actualOutput=stringReplacement.getCharacterReplacer("4532 5689",'5','6');
-        assertEquals(expectedOutput,actualOutput);
-    }
+
 
 
 }

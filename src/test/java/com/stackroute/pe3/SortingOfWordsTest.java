@@ -28,8 +28,8 @@ public class SortingOfWordsTest {
 
     @Test
     public void givenInputShouldReturnSortedString(){
-        String actualResult="aajv is a aaegglnu";
-        String expectedResult=wordSort.wordsSorting("java is a language");
+        String expectedResult="a is java language";
+        String actualResult=wordSort.wordsSorting("java is a language");
         assertEquals(expectedResult,actualResult);
     }
     @Test
